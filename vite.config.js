@@ -1,12 +1,11 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import svgr from "vite-plugin-svgr";
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), svgr()],
   server: {
-    allowedHosts: [
-      "9bf928201a94.ngrok-free.app", // ngrok bergan domen
-    ],
+    allowedHosts: ["40e81f21578e.ngrok-free.app"],
   },
 });
