@@ -1,7 +1,7 @@
 import NavigationBottom from "../components/bottom-navigation";
 import SmartImage from "../components/image";
 import WindowMaster from "../assets/images/window-master.png";
-import VerticalMenu from "../assets/images/window-master.png";
+import VerticalMenu from "../assets/icons/menu-vertical.svg";
 
 export default function Layout({ children }) {
   return (
