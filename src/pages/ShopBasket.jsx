@@ -1,14 +1,12 @@
 import NavigationBottom from "../components/bottom-navigation";
+import Layout from "../layout/Layout";
 
 export default function ShopBasket() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
-      <h1 className="text-4xl font-bold text-gray-800">Shop basket Page</h1>
-      <p className="mt-4 text-lg text-gray-600">
-        This is the Shop basket page. You can add more information here 📖
-      </p>
-
-      <NavigationBottom />
-    </div>
+    <Layout>
+      <div className="min-h-screen  bg-gray-50 mt-[20px] border border-gray-200 rounded-t-2xl shadow-lg">
+        <NavigationBottom />
+      </div>
+    </Layout>
   );
 }

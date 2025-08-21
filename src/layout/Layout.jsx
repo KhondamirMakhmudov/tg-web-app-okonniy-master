@@ -5,9 +5,9 @@ import VerticalMenu from "../assets/icons/menu-vertical.svg";
 
 export default function Layout({ children }) {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="min-h-screen flex flex-col bg-gray-100">
       {/* Navbar */}
-      <header className="w-full shadow-sm rounded-b-xl">
+      <header className="w-full shadow-sm rounded-b-xl bg-white">
         <div className="flex justify-between items-center px-6 py-4">
           <div className="flex items-center gap-2">
             <SmartImage
@@ -30,7 +30,7 @@ export default function Layout({ children }) {
       </header>
 
       {/* Page Content */}
-      <main className="flex-1 px-6 py-4">{children}</main>
+      <main className="flex-1 ">{children}</main>
 
       {/* Bottom Navigation */}
       <NavigationBottom />

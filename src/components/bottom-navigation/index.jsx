@@ -16,7 +16,7 @@ const NavigationBottom = () => {
   ];
 
   return (
-    <div className="lg:hidden fixed bottom-0 left-0 w-full bg-white border-t border-t-gray-200 flex justify-around py-2 z-50 font-gilroy rounded-t-xl shadow-sm">
+    <div className="lg:hidden fixed bottom-0 left-0 w-full bg-white border-t border-t-gray-200 flex justify-around py-2 font-gilroy rounded-t-xl shadow-sm z-9999">
       {links.map(({ to, label, Icon }) => {
         const isActive = location.pathname === to;
         return (
